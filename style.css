@@ -1,0 +1,498 @@
+body {
+  margin: 0;
+  padding:0;
+  background: #F8F1E9;
+  font-family: Poppins, sans-serif;
+  /* font-family: 'Gilda Display', serif;
+  font-family: 'Great Vibes', cursive; 
+  font-family: 'Lustria', serif;
+  font-family: 'Dancing Script', cursive;
+  */
+}
+
+/* Header styles */
+header {
+  background-color: #F8F1E9;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  color: #000000;
+  display: flex;
+  align-items: center;
+  font-family: 'Gilda Display', cursive;
+  font-size: 20px;
+  color: #15151C;
+  margin-left: 20px;
+}
+
+header h1 img {
+  width: 100px;
+  height: auto; /* Adjusted to maintain aspect ratio */
+  margin-right: auto;
+  margin-left: 70px;
+  margin-bottom: -50px;
+  margin-top: -45px;
+}
+
+/* Navigation styles */
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+  color: #B71C64;
+  border-bottom: 2px solid #B71C64;
+}
+
+nav a:active {
+  color: #B71C64;
+}
+
+/* Container styles */
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main Wrapper styles */
+.main_wrapper {
+  margin-top: 80px;
+  display: inline-block;
+  padding: 30px;
+  background: rgba(248, 241, 233, 0.7);
+  border-radius: 20px;
+  width: 70%;
+}
+
+/* Custom Heading styles */
+.custom-heading {
+  padding: 20px;
+  margin-top: 20px;
+  color: #000000;
+  font-size: 1.5em;
+  font-family: 'Lustria', serif;
+}
+
+.custom-heading2 {
+  font-size: 1em;
+  color: #15151C;
+  font-family: 'Lustria', serif;
+}
+
+.custom-heading2 span {
+  font-size: 1em;
+  color: #FF51A2;
+  font-family: 'Lustria', serif;
+}
+
+.custom-heading span {
+  color: #B71C64;
+  font-family: 'Playfair Display', serif;
+  display: inline-block;
+  font-size: 4em;
+  transition: transform 0.5s, color 0.2s;
+}
+
+.custom-heading span:hover {
+  color: #FF51A2;
+  transform: scale3d(0.95, 1.05, 1);
+}
+
+#home {
+  background-image: url('images/bgwc.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 100%;
+}
+
+
+/* ABOUT */
+
+
+#about {
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  margin-bottom: 20px; 
+  height: 100vh;
+  background-color: #F8F1E9;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+main {
+  padding-top: 20px;
+  display: flex;
+  flex: 1;
+}
+
+.sideimage {
+  width: 25%; /* Set the width of the image container */
+}
+
+.sideimage img {
+  margin-top: -25px;
+  width: 80%; /* Make the image fill its container */
+  border: 40px solid transparent;
+  outline: 1px solid #E0144C;
+  outline-offset: -20px;
+  background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#FF97C1 0);
+  padding: 15px;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+ figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+article {
+  flex: 1;
+  padding: 0 80px; /* Add spacing between the image and the article content */
+}
+
+#about > h1.custom-heading {
+  margin-top: 30px;
+  font-size: 1em; /* Adjust the font size as needed */
+  text-align: Center;
+  margin-bottom: 10px;
+}
+p {
+  font-family: 'Lustria', serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #15151C;
+}
+article p {
+  line-height: 2;
+  padding: 30px;
+}
+
+p span {
+  color: #B71C64;
+}
+/* Experience */
+
+ 
+
+#skills {
+  height: 100vh;
+  align-items: center;
+  margin: 50px;
+}
+
+#skills > h1.custom-heading {
+  margin-top: -10px;
+  font-size: 1em; /* Adjust the font size as needed */
+  text-align: Center;
+  margin-bottom: 5px;
+}
+
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 70px;
+}
+
+.box {
+    width: 80px;
+    height: 80px; /* To make the box square */
+    text-align: center;
+    background-color: #F0B6C5;
+
+    border-radius: 10px;
+    padding: 35px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+.box:hover {
+    background-color: #E07486; /* Change to the color you want on hover */
+    transform: scale(1.05); /* Scale the box on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+.box:hover p {
+    color: #FFFFFF; /* Change text color on hover */
+}
+
+.box img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.box p {
+    font-size: 16px;
+    color: #000000;
+    margin: 0;
+    margin-top: -8px;
+    text-align: center;
+
+}
+    
+
+
+
+
+
+.container-sub-title {
+    font-size: 50px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 3em;
+    margin-top: 10px;
+    
+}
+
+/* CONTACT ME */
+#contact {
+  padding: 20px 0;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  background-image: url('images/bgwc.jpg');
+  height: 90vh;
+}
+
+.container {
+  text-align: center;
+}
+
+h1  {
+  color: #B71C64;
+  font-size: 36px;
+}
+
+.subtitle {
+  color: #B71C64;
+  font-size: 16px;
+  margin: 40px 0;
+  margin-bottom: 50px;
+
+}
+
+.input-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  flex: 1;
+  margin-right: 60px;
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #B71C64;
+  background-color: transparent;
+  color: #15151C;
+  outline: none;
+}
+
+textarea {
+  width: 285%;
+  padding: 10px;
+  border: 2px solid #B71C64;
+  background-color: transparent;
+  color: #15151C;
+  resize: none;
+  outline: none;
+}
+
+.submit-button {
+  background-color: transparent;
+  border: 2px solid #B71C64;
+  color: #B71C64;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #B71C64;
+  color: #FFF3E5;
+}
+
+
+
+footer {
+  background-color: #F0B6C5; /* Light Pink */
+  color: #FFF3E5; /* Cream */
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  width: 100%; /* Set the width to 100% */
+  box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+footer p {
+  margin-top: 30px;
+}
+
+.quick-links a, .social-links a {
+  color: #B71C64; /* Dark Pink */
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.quick-links a:hover, .social-links a:hover {
+  color: #FFF3E5; /* Cream */
+}
+
+.social-links .icon {
+  display: inline-block;
+  background-color: #FFF3E5; /* Dark Pink */
+  padding: 10px;
+  border-radius: 5px; /* Slightly rounded corners */
+  transition: background-color 0.3s;
+}
+
+.social-links .icon:hover {
+  background-color: #B71C64; /* Cream */
+}
+
+.social-links {
+  margin-top: 20px; /* Adjusted margin for spacing between quick links and social links */
+}
+
+
+/* Responsive styles using media queries */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 18px;
+  }
+
+  header h1 img {
+    width: 80px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+  }
+
+  .main_wrapper {
+    width: 90%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .sideimage {
+    width: 20%;
+    margin-bottom: 20px;
+  }
+
+  .sideimage img {
+    width: 100%;
+  }
+
+  article {
+    padding: 0 20px;
+  }
+
+  .box {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  #about {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #about > h1.custom-heading {
+    font-size: 0.8em;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  article p {
+    padding: 15px;
+  }
+
+  textarea {
+    padding: 8px;
+  }
+
+  #skills > h1.custom-heading {
+    font-size: 0.8em;
+  }
+
+  .box {
+    width: 80%;
+    margin: 15px 0;
+    padding: 20px;
+  }
+
+  #about {
+    padding: 5px;
+  }
+}
